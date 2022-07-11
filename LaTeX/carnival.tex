@@ -1,0 +1,26 @@
+
+\text{minimize} \sum\limits_{j : m_{j} \neq 1000 }^{}(delta_{j}) + \sum\limits_{v: p_{v} = 1000}^{}(beta*xa_{v}) + \sum\limits_{v: p_{v} = 1000}^{}(beta*xi_{v})\\
+
+\text{subject to: }\\
+delta_{j}  \geq alpha(X_{j}-m_{j}) \quad \forall j, m_{j} \neq 1000\\
+delta_{j}  \geq alpha(m_{j}-X_{j}) \quad \forall j, m_{j} \neq 1000\\
+ua_{j,jj} \geq sigma_{j,jj}X_{j} \quad \forall (j,jj) \in IG\\
+ui_{j,jj} \geq -sigma_{j,jj}X_{j} \quad \forall (j,jj) \in IG\\
+ua_{j,jj}  \leq 1- ui_{j,jj} \quad \forall (j,jj) \in IG\\
+ua_{j,jj} \leq sigma_{j,jj}X_{j} + ui_{j,jj} \quad \forall (j,jj) \in IG\\
+ui_{j,jj} \leq -sigma_{j,jj}X_{j} + ua_{j,jj} \quad \forall (j,jj) \in IG\\
+xa_{v} \leq \sum\limits_{j,jj: jj = v, (j,v) \in IG}^{}(ua_{j,jj}) \quad \forall v, p_{v} = 1000 \\
+xi_{v} \leq \sum\limits_{j,jj : jj = v, (j,v) \in IG}^{}(ui_{j,jj}) \quad \forall v, p_{v} = 1000\\
+X_{j} = xa_{j} - xi_{j} + B_{j} \quad \forall j\\
+X_{j} = p_{j} \quad \forall j, p_{j} \neq 1000\\
+X_{j} = B_{j} \quad \forall j, p_{j} \neq 1000, m_{j} = 1000\\
+B_{j} = 0 \quad \forall j, p_{j} = 1000 \\
+
+xa_{v} \leq d_{v} \quad \forall v \\
+xi_{v} \leq d_{v} \quad \forall v \\
+
+%d_{v} \geq d_{j} + 1 - M + M*ua_{j,jj} \quad \forall v,(j,jj) \in IG, jj = v \\
+%d_{v} \geq d_{j} + 1 - M + M*ui_{j,jj} \quad \forall v,(j,jj) \in IG, jj = v \\
+d_{j} \leq M  \quad \forall j\\
+d \in \mathbb R_+, delta \in \mathbb R, X,B \in \mathbb Z, ua,ui,xa,xi \in \{0,1\}\\
+

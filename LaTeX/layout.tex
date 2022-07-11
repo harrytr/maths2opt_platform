@@ -1,0 +1,14 @@
+\text{minimize}   \sum\limits_{i,j : i \neq j}^{}(C_{i,j}D_{i,j})\\
+\text{subject to: }\\
+D_{i,j} = R_{i,j} + LF_{i,j} + A_{i,j} + B_{i,j} \quad \forall i < |i|, j \geq i + 1\\
+l_{i} = alpha_{i}o_{i} + beta_{i}(1 -o_{i})  \quad \forall i\\
+delta_{i} = alpha_{i}  + beta_{i}  - l_{i} \quad \forall i\\
+x_{i} \geq \frac{l_{i}}{2} \quad \forall i\\
+y_{i} \geq \frac{delta_{i}}{2} \quad \forall i\\
+R_{i,j} - LF_{i,j} = x_{i}  - x_{j} \quad \forall i < |i|, j \geq i + 1\\
+A_{i,j} - B_{i,j} = y_{i} - y_{j}  \quad \forall i < |i|, j \geq i + 1\\
+x_{i} - x_{j} + M(E1_{i,j} + E2_{i,j}) \geq \frac{l_{i}}{2} + \frac{l_{j}}{2} \quad \forall i < |i| , j \geq i + 1\\
+x_{j} - x_{i} + M(1 - E1_{i,j} + E2_{i,j}) \geq \frac{l_{i}}{2} + \frac{l_{j}}{2} \quad \forall i < |i| , j \geq i + 1\\
+y_{i} - y_{j} + M(1 + E1_{i,j} - E2_{i,j}) \geq \frac{delta_{i}}{2} + \frac{delta_{j}}{2} \quad \forall  i < |i| , j \geq i + 1\\
+y_{j} - y_{i} + M(2 - E1_{i,j} - E2_{i,j}) \geq  \frac{delta_{i}}{2} + \frac{delta_{j}}{2} \quad \forall i < |i| , j \geq i + 1\\
+l,LF, delta,x,y,A,B,D,R \in \mathbb R_+,   o,E1,E2 \in \{0,1\}\\

@@ -1,0 +1,9 @@
+\text{minimize}  \sum\limits_{j}^{}(A_{j}N_{j}V_{j}^{0.6})\\
+\text{subject to: }\\
+V_{j} \geq S_{i,j}B_{i} \quad \forall i,j\\
+N_{j}TL_{i} \geq T_{i,j}  \quad \forall i,j\\
+\sum\limits_{i}^{}(Q_{i}\frac{TL_{i}}{B_{i}}) \leq  H\\
+N_{j} = 1 + \sum\limits_{k}^{}(o_{k}Y_{k,j})  \quad \forall j\\
+V_{j} \geq 250 \quad \forall j\\
+V_{j} \leq 2500 \quad \forall j\\
+B \in \mathbb R_{*}^{+}, V,TL,N \in \mathbb R_+,  Y \in \{0,1\}\\

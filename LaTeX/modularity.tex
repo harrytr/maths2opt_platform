@@ -1,0 +1,13 @@
+\text{maximize}   \sum\limits_{m}^{}(\frac{L_{m}}{Lambda} - (\frac{D_{m}}{2Lambda})^2)\\
+\text{subject to: }\\
+\sum\limits_{m}^{} (Y_{n,m}) =  1 \quad \quad \quad \forall n\\
+X_{n,e,m} \leq Y_{n,m}  \quad \quad \forall m, (n,e)  \in LK\\
+X_{n,e,m} \leq Y_{e,m} \quad \quad \forall m, (n,e) \in LK\\
+L_{m}  = \sum\limits_{n,e: (n,e) \in LK }^{}(X_{n,e,m}) \quad \quad \forall m\\
+D_{m}  = \sum\limits_{n}^{}(delta_{n}Y_{n,m})  \quad \quad \forall m\\
+%EV_{m} \leq EV_{m-1}  \quad \quad \forall m > 1\\
+%\sum\limits_{n,e:(n,e) \in LK }^{}(X_{n,e,m}) \geq a*EV_{m} \quad \quad \forall m\\
+%\sum\limits_{n,e:(n,e) \in LK }^{}(X_{n,e,m}) \leq b*EV_{m} \quad \quad \forall m\\
+%L_{m} - L_{k} \leq epsilon + b(1 - EV_{k}) \quad \quad \forall m,k > m\\
+%L_{k} - L_{m} \leq epsilon + b(1 - EV_{k}) \quad \quad \forall m,k > m\\
+L, D \in \mathbb Z_+,  X,Y \in \{0,1\}\\

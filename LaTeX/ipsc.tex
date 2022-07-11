@@ -1,0 +1,30 @@
+\text{maximize} \sum\limits_{i,p}^{}(S_{i,p}Prc_{i}) - \sum\limits_{i,p}^{}(Cinv_{i}V_{i,p}) -\sum\limits_{i,p}^{}(Pr_{i,p}Coper_{i})-\sum\limits_{i,p}^{}(CB_{i}B_{i,p})-\sum\limits_{i,p,j}^{}(\alpha_{i,j}Ttrans_{i,j} +\beta_{i,j}(ZC_{i,j,p}+Zf_{i,j,p}))  -\sum\limits_{i,p,m}^{}(T_{i,p}uss_{m,i}Craw_{m})\\
+\text{subject to: }\\
+
+\sum\limits_{i}^{}(FR_{i,p})=1 \quad \forall p\\
+\sum\limits_{i}^{}(L_{i,p})=1 \quad \forall p\\
+FR_{i,p}\leq E_{i,p}\quad \forall i,p\\
+L_{i,p}\leq E_{i,p}\quad \forall i,p\\
+\sum\limits_{i: i \neq j}^{}(ZC_{i,j,p})=E_{j,p}-FR_{j,p}\quad \forall j,p \\
+\sum\limits_{j : j \neq i}^{}(ZC_{i,j,p})=E_{i,p}-L_{i,p}\quad \forall i,p\\
+\sum\limits_{i}^{}(Zf_{i,j,p})=FR_{j,p}\quad \forall j,p>1\\
+\sum\limits_{j}^{}(Zf_{i,j,p})=FR_{i,p-1}\quad \forall i,p>1\\
+O_{j,p}-O_{i,p}+1 \geq-BigM(1-ZC_{i,j,p})\quad \forall i,j \neq i,p\\
+O_{i,p}\leq BigM*E_{i,p}\quad \forall i,p\\
+FR_{i,p}\leq O_{i,p} \quad \forall i,p\\
+O_{i,p}\leq \sum\limits_{j}^{}(E_{j,p}) \quad \forall i,p\\
+\theta*E_{i,p}\leq T_{i,p} \quad \forall i,p\\
+T_{i,p}\leq \psi*E_{i,p} \quad \forall i,p\\
+\sum\limits_{i}^{}(T_{i,p})+\sum\limits_{i,j : j\neq i}^{}(ZC_{i,j,p}Ttrans_{i,j}) \leq Tmax \quad \forall p=1\\
+\sum\limits_{i}^{}(T_{i,p})+\sum\limits_{i,j : j\neq i}^{}(ZC_{i,j,p}Ttrans_{i,j}) +\sum\limits_{i,j}^{}(Zf_{i,j,p}Ttrans_{i,j})  \leq Tmax \quad \forall p>1\\
+Pr_{i,p}=T_{i,p}r_{i}\quad \forall i,p\\
+B_{i,p}=B_{i,p-1}+D_{i,p}-S_{i,p}\quad \forall i,p > 1\\
+V_{i,p}=V_{i,p-1}+Pr_{i,p}- S_{i,p} \quad \forall i,p > 1\\
+
+B_{i,p}=D_{i,p}- S_{i,p} \quad \forall i,p = 1\\
+V_{i,p}=Pr_{i,p}- S_{i,p} \quad \forall i,p = 1\\
+
+
+Vmin_{i}  \leq V_{i,p} \quad\forall i,p\\
+V_{i,p}\leq Vmax_{i}   \quad \forall i,p\\
+O \in \mathbb Z_+, Pr, V, B, T, S \in \mathbb R_+, ZC,Zf,E,L,FR \in \{0,1\}  \\

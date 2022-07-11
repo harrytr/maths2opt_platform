@@ -1,0 +1,6 @@
+\text{maximize}   \sum\limits_{m}^{}(\frac{L_{m}}{LT} - (\frac{D_{m}}{2LT})^2)\\
+\text{subject to: }\\ 
+\sum\limits_{m}^{}(Y_{n,m}) = 1 \forall n\\    
+L_{m}  = \sum\limits_{n,e: (n,e) \in LK }^{}(Y_{n,m}Y_{e,m}) \quad \quad \forall m\\
+D_{m}  = \sum\limits_{n}^{}(d_{n}Y_{n,m})  \quad \quad \forall m\\
+L \in \mathbb R, D \in \mathbb R_+,  Y \in \{0,1\}\\

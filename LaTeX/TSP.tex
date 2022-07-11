@@ -1,0 +1,5 @@
+\text{minimize}  \sum\limits_{i,j : i \neq j}^{} (d_{i,j}x_{i,j})\\
+\text{subject to: }\\
+\sum\limits_{j : i \neq j}^{} (x_{i,j}) =  2 \quad \quad \forall i\\
+\sum\limits_{i: i \neq j}^{} (x_{i,j}) \leq n - 1  \quad \quad \forall j\\
+x \in \{0,1\}\\

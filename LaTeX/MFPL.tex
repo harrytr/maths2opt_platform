@@ -1,0 +1,30 @@
+\text{minimize} \sum\limits_{i,j:f_{i,j}=1}^{}(Cc_{i,j}*TD_{i,j} + Cv_{i,j}*Dn_{i,j} + Ch_{i,j}(R_{i,j}+H_{i,j}+A_{i,j}+B_{i,j})) + \sum\limits_{t}^{}(FC1*NF_{t}) + \sum\limits_{s}^{}(FC2*AR_{s}NQ_{s}) + \sum\limits_{t}^{}(LC*FA_{t}) \\
+\text{subject to: }\\
+
+\sum\limits_{k}^{}(V_{i,k})=1 \quad \forall i \\
+ZT_{i,j} \geq V_{i,k}+V_{j,k}-1 \quad\quad\forall  i,k,j > i,k \\
+ZT_{i,j} \leq 1 - V_{i,k} +  V_{j,k} \quad\quad\forall  i,k,j > i,k \\
+ZT_{i,j} \leq 1 + V_{i,k} - V_{j,k} \quad\quad\forall  i,k,j > i,k \\
+NF_{t}\geq \sum\limits_{k}^{}(KS_{k}V_{i,k}) \quad\quad\forall  i,t \\
+l_{i}=alpha_{i}O_{i}+beta_{i}(1-O_{i}) \quad\quad\forall  i \\
+d_{i}=alpha_{i}+beta_{i}-l_{i} \quad\quad\forall  i \\
+x_{i} - x_{j} + MM(1-ZT_{i,j} + E1_{i,j} + E2_{i,j}) \geq \frac{l_{i}+l_{j}}{2} \forall i,j>i \\
+x_{j}-x_{i}+MM(2-ZT_{i,j}-E1_{i,j}+E2_{i,j})\geq\frac{l_{i} + l_{j}}{2} \quad\quad\forall  i,j > i \\
+y_{i}-y_{j}+MM(2-ZT_{i,j}+E1_{i,j}-E2_{i,j})\geq\frac{d_{i} + d_{j}}{2} \quad\quad\forall  i,j > i \\
+y_{j}-y_{i}+MM(3-ZT_{i,j}-E1_{i,j}-E2_{i,j})\geq\frac{d_{i} + d_{j}}{2} \quad\quad\forall  i,j > i \\
+R_{i,j}-H_{i,j}=x_{i}-x_{j} \quad\quad\forall i,j,f_{i,j}=1 \\
+A_{i,j}-B_{i,j}=y_{i}-y_{j} \quad\quad\forall i,j,f_{i,j}=1 \\
+U_{i,j}-Dn_{i,j}=\sum\limits_{k}^{}(FH*KS_{k}(V_{i,k} - V_{j,k})) \quad\quad\forall i,j,f_{i,j}=1 \\
+TD_{i,j}=R_{i,j}+H_{i,j}+A_{i,j}+B_{i,j}+U_{i,j}+Dn_{i,j} \quad\quad\forall i,j,f_{i,j}=1 \\
+x_{i}\geq\frac{l_{i}}{2} \quad\quad\forall i \\
+y_{i}\geq\frac{d_{i}}{2} \quad\quad\forall  i \\
+x_{i}+\frac{l_{i}}{2}\leq Xmx_{t} \quad\quad\forall  i,t \\
+y_{i}+\frac{d_{i}}{2}\leq Ymx_{t} \quad\quad\forall  i,t \\
+FA_{t} = \sum\limits_{s}^{}(AR_{s}Q_{s}) \quad\quad\forall  t  \\
+\sum\limits_{s}^{}(Q_{s}) = 1 \\
+Xmx_{t} = \sum\limits_{s}^{}(x1_{s}Q_{s}) \quad\quad\forall  t \\
+Ymx_{t} = \sum\limits_{s}^{}(y1_{s}Q_{s}) \quad\quad\forall  t \\
+NQ_{s} \leq KP*Q_{s} \quad\quad \forall  s \\
+NF_{t} = \sum\limits_{s}^{}(NQ_{s}) \quad\quad \forall  t\\
+l,d,x,y,TD,R,H,A,B,U,Dn,FA,Xmx,Ymx,NQ \in \mathbb R_+, NF \in \mathbb Z, O,E1,E2,Q,V,ZT \in \{0,1\} \\
+

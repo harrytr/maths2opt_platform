@@ -1,0 +1,11 @@
+\text{minimize}  \sum\limits_{j}^{}(c_{j}m_{j} + CB_{j}y_{j})\\
+\text{subject to: }\\
+\sum\limits_{i}^{}(b_{i}n_{i,j}) \leq Bmax \quad \forall j\\
+-\sum\limits_{i}^{}(b_{i}n_{i,j}) + Bmax  - \Delta \leq 0 \quad \forall j\\
+\sum\limits_{i}^{}(n_{i,j}) - Nmax \leq 0 \quad \forall j\\
+y_{j} - m_{j} \leq 0 \quad \forall j\\
+m_{j} - MS*y_{j} \leq 0  \quad \forall j\\
+D_{i} -  \sum\limits_{j}^{}(m_{j}n_{i,j})  \leq 0  \quad \forall i\\
+m_{j} \leq MS \quad \forall j\\
+n_{i,j} \leq Nmax \quad \forall i,j\\
+m,n \in \mathbb Z_+,  y \in \{0,1\}\\

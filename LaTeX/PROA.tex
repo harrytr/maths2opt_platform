@@ -1,0 +1,10 @@
+\text{minimize} \sum\limits_{s}^{}(D_{s})\\
+\text{subject to: }\\
+X_{r-1,m} \leq X_{r,m} \quad \forall r>1, r<|r|, m  = 3\\
+X_{r-1,m}-U1(1-H_{s,r})+0.001 \leq A_{s,m} \quad \forall s, r>1, m  = 3\\
+A_{s,m} \leq X_{r,m} + U1(1-H_{s,r})-0.001 \quad \forall s, r<|r|, m  = 3\\
+\sum\limits_{r}^{}(H_{s,r}) = 1 \quad \forall s\\
+Pr_{s,r} = \sum\limits_{m}^{}(A_{s,m}W_{m,r})+ B_{r} \quad \forall s, r\\
+D_{s} \geq Y_{s}-Pr_{s,r}-U2(1-H_{s,r}) \quad \forall s, r\\
+D_{s} \geq Pr_{s,r}-Y_{s}-U2(1-H_{s,r}) \quad \forall s, r\\
+X, D \in \mathbb R_+, B, W, Pr \in \mathbb R, H \in \{0,1\}\\

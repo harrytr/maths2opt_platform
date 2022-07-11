@@ -1,0 +1,12 @@
+\text{minimize}  \sum\limits_{i}^{}(a_{i} + b_{i}P_{i} + c_{i}P_{i}^2)\\
+\text{subject to: }\\
+\sum\limits_{i}^{}(P_{i})   =  LD\\
+PL_{i,k}Y_{i,k} \leq \Theta_{i,k}  \quad \forall (i,k) \in OZ\\
+\Theta_{i,k} \leq PH_{i,k}Y_{i,k}  \quad \forall (i,k) \in OZ\\
+\sum\limits_{k: (i,k) \in OZ}^{}(Y_{i,k})   = 1  \quad \forall i \in PU\\
+\sum\limits_{k: (i,k) \in OZ}^{}(\Theta_{i,k}) = P_{i}  \quad \forall i \in PU\\
+S_{i}  \leq PIR_{i,r: 'high'} - P_{i}  \quad \forall i \notin PU\\
+S_{i} \leq Smx \quad \forall i \notin PU \\
+S_{i} = 0 \quad \forall i \in PU \\
+\sum\limits_{i : i \notin PU}^{}(S_{i})   \geq SR\\
+P,\Theta,S \in \mathbb R_+,  Y \in \{0,1\}\\
