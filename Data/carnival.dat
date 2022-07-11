@@ -1,0 +1,39 @@
+
+param alpha := 1;
+param beta := .2;
+param M := 100;
+set j := P1 P2 TF1 TF2 G1 G2;
+set jj := P1 P2 TF1 TF2 G1 G2;
+set v := P1 P2 TF1 TF2 G1 G2;
+
+set IG:=
+       (P1,TF1) 
+       (P2,TF2)
+       (TF1,G1)
+       (TF1,G2) 
+       (TF2,G1)
+       (TF2,G2); 
+
+param sigma := 
+       P1  TF1 1
+       P2  TF2 -1
+       TF1 G1 1
+       TF1 G2 1
+       TF2 G1 1
+       TF2 G2 1; 
+
+param p :=
+      P1   1
+      P2   1
+      TF1 1000
+      TF2 1000
+      G1 1000
+      G2 1000;
+      
+param m :=
+      TF1 1000
+      TF2 1000
+      P1 1000
+      P2 1000
+      G1 1
+      G2 1;

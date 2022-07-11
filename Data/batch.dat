@@ -1,0 +1,28 @@
+set i:= a b;
+
+set j:= 1 2 3;
+
+set k:= 1 2;
+
+param Q:= 
+a 200000
+b 100000;
+
+param o:=
+1 1
+2 2;
+
+param H:= 6000;
+
+param A:=
+1 250
+2 250
+3 250;
+
+param S:    1 2 3 :=
+a           2 3 4
+b           4 6 3;
+
+param T:     1  2  3 :=
+a            8  20 8
+b           16  4  4;
