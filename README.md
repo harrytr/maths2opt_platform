@@ -13,12 +13,12 @@ Once you do that, simply select the solver required from NEOS server from the dr
 ### References
 Please cite using :
 
-> [1] Triantafyllidis CP, Papageorgiou LG. 2018. An integrated platform for intuitive mathematical programming modeling using LaTeX. PeerJ Computer Science 4:e161 https://doi.org/10.7717/peerj-cs.161
+> Triantafyllidis CP, Papageorgiou LG. 2018. An integrated platform for intuitive mathematical programming modeling using LaTeX. PeerJ Computer Science 4:e161 https://doi.org/10.7717/peerj-cs.161
 
 
 The models included in the repository are cited accordingly based on the file name:
 
-TSP : Applegate et al. (2011)
+TSP : Applegate et al. (2011) <br />
 PELD : Papageorgiou and Fraga (2007)
 Community Detection : Xu et al. (2007)
 LOBICO : Knijnenburg et al. (2016)
