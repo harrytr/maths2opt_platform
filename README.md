@@ -19,18 +19,18 @@ Please cite using :
 The models included in the repository are cited accordingly (based on the .tex file name):
 
 
-TSP(1) <br />
-PELD (9) <br />
-Community Detection (11) <br />
-LOBICO (6) <br />
-Layout (10) <br />
-IPSC (2; 8) <br />
-CARNIVAL (7) <br />
-Trimloss (5) <br />
-Batch processing (4) <br />
-Comm Det NLP (12) <br />
-PROA (13) <br />
-MFPL (3) <br />
+[1] TSP  <br />
+[9] PELD <br />
+[11] Community Detection <br />
+[6] LOBICO <br />
+[10] Layout <br />
+[2,8] IPSC <br />
+[7] CARNIVAL <br />
+[5] Trimloss <br />
+[4] Batch processing <br />
+[12] Comm Det NLP <br />
+[13] PROA <br />
+[3] MFPL <br />
 
 > [1] Applegate, D.L., Bixby, R.E., Chv ́atal, V., Cook, W.J., 2011. The Traveling Salesman Problem: A Computational Study. Princeton University Press.
 
