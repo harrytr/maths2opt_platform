@@ -19,17 +19,17 @@ Please cite using :
 The models included in the repository are cited accordingly based on the file name:
 
 TSP : Applegate et al. (2011) <br />
-PELD : Papageorgiou and Fraga (2007)
-Community Detection : Xu et al. (2007)
-LOBICO : Knijnenburg et al. (2016)
-Layout : Papageorgiou and Rotstein (1998)
-IPSC : Charitopoulos et al. (2017); Liu et al. (2008)
-CARNIVAL : Liu et al. (2019)
-Trimloss : Harjunkoski et al. (2009)
-Batch processing : Grossmann and Sargent (1979)
-Comm Det NLP : Xu et al. (2010)
-PROA : Yang et al. (2016)
-MFPL : Ejeh et al. (2018)
+PELD : Papageorgiou and Fraga (2007) <br />
+Community Detection : Xu et al. (2007) <br />
+LOBICO : Knijnenburg et al. (2016) <br />
+Layout : Papageorgiou and Rotstein (1998) <br />
+IPSC : Charitopoulos et al. (2017); Liu et al. (2008) <br />
+CARNIVAL : Liu et al. (2019) <br />
+Trimloss : Harjunkoski et al. (2009) <br />
+Batch processing : Grossmann and Sargent (1979) <br />
+Comm Det NLP : Xu et al. (2010) <br />
+PROA : Yang et al. (2016) <br />
+MFPL : Ejeh et al. (2018) <br />
 
 
 > [1] Applegate, D.L., Bixby, R.E., Chv ́atal, V., Cook, W.J., 2011. The Traveling Salesman Problem: A Computational Study. Princeton University Press.
