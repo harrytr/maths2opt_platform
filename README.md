@@ -32,40 +32,28 @@ PROA : Yang et al. (2016)
 MFPL : Ejeh et al. (2018)
 
 
-[1] Applegate, D.L., Bixby, R.E., Chv ́atal, V., Cook, W.J., 2011. The Traveling Salesman Problem: A Computational Study.
-Princeton University Press.
+> [1] Applegate, D.L., Bixby, R.E., Chv ́atal, V., Cook, W.J., 2011. The Traveling Salesman Problem: A Computational Study. Princeton University Press.
 
-[2] Charitopoulos, V.M., Dua, V., Papageorgiou, L.G., 2017. Traveling salesman problem-based integration of planning, scheduling,
-and optimal control for continuous processes. Industrial & Engineering Chemistry Research 56, 11186–11205.
+> [2] Charitopoulos, V.M., Dua, V., Papageorgiou, L.G., 2017. Traveling salesman problem-based integration of planning, scheduling, and optimal control for continuous processes. Industrial & Engineering Chemistry Research 56, 11186–11205.
 
-[3] Ejeh, J.O., Liu, S., Papageorgiou, L.G., 2018. Optimal multi-floor process plant layout with production sections. Chemical
-Engineering Research and Design 137, 488–501.
+> [3] Ejeh, J.O., Liu, S., Papageorgiou, L.G., 2018. Optimal multi-floor process plant layout with production sections. Chemical Engineering Research and Design 137, 488–501.
 
-[4] Grossmann, I.E., Sargent, R.W.H., 1979. Optimum design of multipurpose chemical plants. Industrial & Engineering Chemistry
-Process Design and Development 18, 343–348.
+> [4] Grossmann, I.E., Sargent, R.W.H., 1979. Optimum design of multipurpose chemical plants. Industrial & Engineering Chemistry Process Design and Development 18, 343 348.
 
-[5] Harjunkoski, I., P ̈orn, R., Westerlund, T., 2009. MINLP: trim-loss problemMINLP: Trim-loss Problem. Springer US, Boston,
-MA. pp. 2190–2198.
+> [5] Harjunkoski, I., P ̈orn, R., Westerlund, T., 2009. MINLP: trim-loss problemMINLP: Trim-loss Problem. Springer US, Boston, MA. pp. 2190–2198.
 
-[6] Knijnenburg, T.A., Klau, G.W., Iorio, F., Garnett, M.J., McDermott, U., Shmulevich, I., Wessels, L.F.A., 2016. Logic models
-to predict continuous outputs based on binary inputs with an application to personalized cancer therapy. Scientific Reports.
+> [6] Knijnenburg, T.A., Klau, G.W., Iorio, F., Garnett, M.J., McDermott, U., Shmulevich, I., Wessels, L.F.A., 2016. Logic models to predict continuous outputs based on binary inputs with an application to personalized cancer therapy. Scientific Reports.
 
-[7] Liu, A., Trairatphisan, P., Gjerga, E., Didangelos, A., Barratt, J., Saez-Rodriguez, J., 2019. From expression footprints to
-causal pathways: contextualizing large signaling networks with carnival. npj Systems Biology and Applications 5, 40.
+> [7] Liu, A., Trairatphisan, P., Gjerga, E., Didangelos, A., Barratt, J., Saez-Rodriguez, J., 2019. From expression footprints to causal pathways: contextualizing large signaling networks with carnival. npj Systems Biology and Applications 5, 40.
 
-[8] Liu, S., Pinto, J.M., Papageorgiou, L.G., 2008. A tsp-based milp model for medium-term planning of single-stage continuous
-multiproduct plants. Industrial & Engineering Chemistry Research 47, 7733–7743.
+> [8] Liu, S., Pinto, J.M., Papageorgiou, L.G., 2008. A tsp-based milp model for medium-term planning of single-stage continuous multiproduct plants. Industrial & Engineering Chemistry Research 47, 7733–7743.
 
-[9] Papageorgiou, L.G., Fraga, E.S., 2007. A mixed integer quadratic programming formulation for the economic dispatch of
-generators with prohibited operating zones. Electric Power Systems Research 77, 1292 – 1296.
+> [9] Papageorgiou, L.G., Fraga, E.S., 2007. A mixed integer quadratic programming formulation for the economic dispatch of generators with prohibited operating zones. Electric Power Systems Research 77, 1292 – 1296.
 
-[10] Papageorgiou, L.G., Rotstein, G.E., 1998. Continuous-domain mathematical models for optimal process plant layout. Industrial
-& Engineering Chemistry Research 37, 3631–3639.
+> [10] Papageorgiou, L.G., Rotstein, G.E., 1998. Continuous-domain mathematical models for optimal process plant layout. Industrial & Engineering Chemistry Research 37, 3631–3639.
 
-[11] Xu, G., Bennett, L., Papageorgiou, L.G., Tsoka, S., 2010. Module detection in complex networks using integer optimisation.
-Algorithms for Molecular Biology 5, 36.
+> [11] Xu, G., Bennett, L., Papageorgiou, L.G., Tsoka, S., 2010. Module detection in complex networks using integer optimisation.  Algorithms for Molecular Biology 5, 36.
 
-[12] Xu, G., Tsoka, S., Papageorgiou, L.G., 2007. Finding community structures in complex networks using mixed integer optimisation. The European Physical Journal B 60, 231–239.
+> [12] Xu, G., Tsoka, S., Papageorgiou, L.G., 2007. Finding community structures in complex networks using mixed integer optimisation. The European Physical Journal B 60, 231–239.
 
-[13] Yang, L., Liu, S., Tsoka, S., Papageorgiou, L.G., 2016. Mathematical programming for piecewise linear regression analysis.
-Expert Systems with Applications 44, 156–167
+> [13] Yang, L., Liu, S., Tsoka, S., Papageorgiou, L.G., 2016. Mathematical programming for piecewise linear regression analysis. Expert Systems with Applications 44, 156–167.
